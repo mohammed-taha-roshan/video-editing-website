@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "CustomFont";
+}
+
+.yo{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway',sans-serif;
+    background-image: url('./images/backgrd_mail.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #fdf3f3;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.4rem;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30em;
+    width: 100%;
+    font-family: cursive;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.hi{
+    font-family: cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.alt-login{
+    display: flex;
+    padding-top: 10px;
+    width: 150%;
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 0.25em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+}
+.Facebook{
+    /* background-color: #3c354e; */
+    height:500%;
+    width: 50%;
+    background-image: url("./images/facebook.png");
+    background-size:50px;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.Google{
+    height:100%;
+    width: 50%;
+    background-image: url("./images/google.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to left, #0e0b0a 0%, #09090a 79%); */
+    align-items: center;
+}
+.cover input {
+    padding-top: 2rem;
+    margin: 0.5rem 0 0rem 0;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+    border-radius: 2rem;
+    width: 300%;
+    height:3rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    color: #3c354e;
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+.cover input:focus {
+    outline-color: rgb(234, 240, 243);
+}
+.cover input::placeholder {
+    color: #b9abe0;
+    opacity: 1;
+    font-family: cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+.login-btn {
+    color: rgb(236, 240, 243);
+    margin-top: 25px;
+    background-color:rgba(42, 23, 216, 0.15);
+    width: 200%;
+    height: 3em;
+    /* background-color: rgb(32, 177, 255); */
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.h11{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:100;
+}
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    text-align: center;
+    font-size: small;
+    font-family: cursive;
+    bottom: 0.5%;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.blue {
+    width: 75%;
+    height: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./images/google.png');
+}
+
+/* -------------------- TABLET OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 37em) {
+    .page {
+        font-size: 1em;
+    }
+
+    .cover {
+        width: 60%;
+        height: 70%;
+    }
+}
+
+/* -------------------- DESKTOP OPTIMIZATION -------------------- */
+@media only screen and (min-device-width: 64em) {
+    .page {
+        font-size: 1.25em;
+    }
+
+    .cover {
+        width: 25%;
+        height: 65%;
+    }
+}

@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(2, 1, 7);
+  }
+  
+  /* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } */
+  /* .nav {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .image{
+    width: 50px;
+    background:rgb(24, 24, 27) ;
+  }
+  
+  /* .nav-items {
+    list-style: none;
+    display: flex;
+  }
+  .nav-items >li{
+    padding: 10px;
+  } */
+  
+  nav{
+    display: flex;
+    /* background-color: rgb(43, 41, 71); */
+    align-items: center;
+  }
+  .
+  /* nav >image{
+    width: 10px;
+  } */
+  
+  nav >h3,nav >h4{
+    margin: 0;
+  }
+  nav > h3{
+    margin-left: 10px;
+    margin-right :auto;
+    color: aqua;
+  }
+  nav > h4{
+    color: azure;
+  }
+  main{
+    /* background-color: rgb(43, 41, 71); */
+    padding: 57px 27px;
+    color: white;
+    background-image: url(C:\Users\aleem\OneDrive\Desktop\html2\REACT_UNIT3\react1\src\backgrnd_img.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px;
+    /* letter-spacing: -0.04em; used for decresing the spacing btw the letter  */
+  }
+  h1{
+    margin: 0px;
+  }
+  
+  .UL >li{
+    padding-block: 10px;
+    /* for each block padiing */
+  }
+  /* to make the bullets larger */
+  .UL >li::marker{
+    font-size: 1.4rem;
+    color: aqua;
+  }
+  
+  
